@@ -69,13 +69,13 @@ struct RoutesWidget : ModuleWidget {
 		addChild(Widget::create<ScrewSilver>(Vec(RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 		addChild(Widget::create<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
-		addParam(ParamWidget::create<Davies1900hBlackKnob>(Vec(28, 87), module, MyModule::PITCH_PARAM, -3.0, 3.0, 0.0));
+		addParam(ParamWidget::create<Davies1900hBlackKnob>(Vec(28, 87), module, Routes::PITCH_PARAM, -3.0, 3.0, 0.0));
 
-		addInput(Port::create<PJ301MPort>(Vec(33, 186), Port::INPUT, module, MyModule::PITCH_INPUT));
+		addInput(Port::create<PJ301MPort>(Vec(33, 186), Port::INPUT, module, Routes::PITCH_INPUT));
 
-		addOutput(Port::create<PJ301MPort>(Vec(33, 275), Port::OUTPUT, module, MyModule::SINE_OUTPUT));
+		addOutput(Port::create<PJ301MPort>(Vec(33, 275), Port::OUTPUT, module, Routes::SINE_OUTPUT));
 
-		addChild(ModuleLightWidget::create<MediumLight<RedLight>>(Vec(41, 59), module, MyModule::BLINK_LIGHT));
+		addChild(ModuleLightWidget::create<MediumLight<RedLight>>(Vec(41, 59), module, Routes::BLINK_LIGHT));
 	}
 };
 
