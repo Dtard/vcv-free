@@ -13,7 +13,7 @@ void init(Plugin *p) {
  	p->manual = "https://github.com/23volts/vcv-free/blob/master/README.md";
 	// Add all Models defined throughout the plugin
 	p->addModel(modelJunctions);
-	p->addModel(modelRam);
+	p->addModel(modelRom);
 	p->addModel(modelRoutes);
 
 	// Any other plugin initialization may go here.

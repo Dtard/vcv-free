@@ -8,5 +8,5 @@ extern Plugin *plugin;
 
 // Forward-declare each Model, defined in each module source file
 extern Model *modelJunctions;
-extern Model *modelRam;
+extern Model *modelRom;
 extern Model *modelRoutes;
