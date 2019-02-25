@@ -1,5 +1,5 @@
 #include "23v.hpp"
-
+#include "dsp/digital.hpp"
 
 struct Rom : Module {
 	enum ParamIds {
@@ -126,7 +126,7 @@ void fromJson(json_t *rootJ) override {
 }
 
 
-void Ram::step() {
+void Rom::step() {
 	/*// Implement a simple sine oscillator
 	float deltaTime = engineGetSampleTime();
 
@@ -178,4 +178,4 @@ struct RomWidget : ModuleWidget {
 // author name for categorization per plugin, module slug (should never
 // change), human-readable module name, and any number of tags
 // (found in `include/tags.hpp`) separated by commas.
-Model *modelRom = Model::create<Rom, RamWidget>("23v", "ROM", "ROM", SEQUENCER_TAG);
+Model *modelRom = Model::create<Rom, RomWidget>("23v", "ROM", "ROM", SEQUENCER_TAG);
