@@ -126,7 +126,7 @@ void fromJson(json_t *rootJ) override {
 }
 
 
-void Ram::step() {
+void Rom::step() {
 	/*// Implement a simple sine oscillator
 	float deltaTime = engineGetSampleTime();
 
